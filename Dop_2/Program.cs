@@ -5,7 +5,7 @@
 // -> 954 - число интересное, средняя цифра - 4, разница: 9 - 5 = 4.
 // Средняя цифра - цифра(962-6, 23456 - средняя 4)
 
-bool chisloInterestoe = false;
+
 int max = 0;
 int max1 = 0;
 int imax = 0;
@@ -15,7 +15,6 @@ int imin = 10;
 int raznost = 0;
 int count = 0;
 int nextcount = 10;
-int rezult = 1;
 int i = 10;
 int nextDigit = 0;
 int newchislo = 0;
@@ -25,9 +24,6 @@ Console.Clear();
 
 Console.Write("Введи число: ");
 int chislo = Convert.ToInt32(Console.ReadLine());
-
-
-
 
 count = countOfChislo(chislo);
 
@@ -109,6 +105,6 @@ int countOfChislo(int chislo1)
         i = i * 10;
         countTemp ++;
     }
-    Console.WriteLine($"countTemp: {countTemp}, chislo: {chislo1}");
+
     return countTemp;
 }
